@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="src/styles.css">
-</head>
+	<head>
+		<title>My Todo List</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="src/styles.css">
+	</head>
 
-<body>
-	<div id="todoList">
-			<div id="myDIV" class="header">
-				<h1>My To Do List</h2>
-				<input type="text" id="myInput" placeholder="Title...">
-				<span id="addBtn">Add</span>
-			</div>
-				
-				<ul id="myUL">
+	<body>
+		<div id="todoList">
+				<div id="myDIV" class="header">
+					<h1>My To Do List</h2>
+					<div class="inputWrapper">
+						<input type="text" id="todoItemInput" placeholder="Title...">
+						<span id="addBtn">Add</span>
+					</div>
+				</div>
+					
+				<ul id="todoItems">
 					<li>Hit the gym<span class="close">x</span></li>
 				</ul>
-		<script src="src/script.js">
-	</script>
-	</div>
-</body>
-
+		</div>
+		<script src="src/index.js"></script>
+	</body>
 </html>
