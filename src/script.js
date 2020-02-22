@@ -40,13 +40,13 @@ function checkTodoItem(item) {
 // Create a new list item when clicking on the "Add" button
 function addNewTodoItem() {
   var li = document.createElement("li");
-  var inputValue = document.querySelector("#myInput").value;
+  var inputValue = document.querySelector("#todoItemInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue !== "") {
-    document.querySelector("#myUL").appendChild(li);
+    document.querySelector("#todoItems").appendChild(li);
   }
-  document.querySelector("#myInput").value = "";
+  document.querySelector("#todoItemInput").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("x");
